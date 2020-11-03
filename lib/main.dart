@@ -34,30 +34,40 @@ class MyProfile extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.only(left: 10.0, right: 10.0),
-                height: 30.0,
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
+
+              Card(
+                  margin:
+                  EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.mail_outline_outlined,
-                      size: 20.0,
+                      color: Colors.black,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'obi_wan@iessaladillo.es',
+                    title: Text(
+                      'Obiwan@gmail.com',
                       style: TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: 'PressStart2P',
                         fontSize: 15.0,
                       ),
                     ),
-                  ],
-                ),
-              ),
+                  )),
+              Card(
+                  margin:
+                  EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.local_phone,
+                      color: Colors.black,
+                    ),
+                    title: Text(
+                      'telefono',
+                      style: TextStyle(
+                        fontFamily: 'PressStart2P',
+                        fontSize: 15.0,
+                      ),
+                    ),
+                  ))
+
             ],
           ),
         ),
